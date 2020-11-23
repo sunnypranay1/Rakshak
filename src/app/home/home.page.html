@@ -23,7 +23,7 @@
           <a class="nav-link" (click)="how_to_use()" >How to use it 👷</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="#">Support this project ❤️<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="https://github.com/sunnypranay1/Rakshak/tree/master">Support this project ❤️<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item active">
           <a class="nav-link" href="mailto:mpranay2017@gmail.com">Developer Mail 💌</a>
@@ -32,19 +32,26 @@
     </div>
   </nav>
   <div class="content">
-  <h2>Tips!</h2>
+  <h2>Tips! 💡</h2>
   <ol>
   <li>Place object near the phone and click the button below</li>
 </ol>
 </div>
   <div class="parent" >
-    <div class="round-button"><div class="round-button-circle"><a (click)="test()"  class="round-button">Click Here To Detect!!</a></div></div>
-    <ul>  
-      <li> Request {{requestNumber }}</li>
-      <li>{{msg}} </li>
-    </ul>
+    <button class="button" (click)="test()">
+      <div class="button__content">
+        <div class="button__icon">
+          
+        </div>
+        <p class="button__text"   >Click Me <br> to check</p>
+      </div>
+    </button>
   </div>
-  
+  <br>
+  <ul>  
+    <li> <P><b> Request Number</b> : {{requestNumber }}</P></li>
+    <li><p><b>{{msg}}</b> </p></li>
+  </ul>
 </body>
 
 </html>
